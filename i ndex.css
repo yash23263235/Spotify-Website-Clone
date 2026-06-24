@@ -1,0 +1,255 @@
+*{
+    
+font-family: "Montserrat", sans-serif;
+
+}
+body{
+    margin:0;
+    background-color:black;
+    color:white;
+    overflow:hidden;
+}
+.main{
+    display:flex;
+    height:100vh;
+    padding:0.75rem;
+}
+.sidebar{
+    background-color:black;
+    width:340px;
+    border-radius:1rem; /*1rem=16px*/
+    margin-right:0.5rem;
+    
+}
+.main-content{
+    background-color:#121212;
+    flex:1;
+    border-radius:1rem;
+    overflow:auto; /*overflow scroll ke liye jab jaroorat padegi to dikhai degi*/
+    padding:0rem 1.5rem 0rem 1.5rem;
+}
+.Music-player{
+    background-color:black;
+    border-radius: 10px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:72px;
+    overflow:auto;
+
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.nav{
+    background-color:#121212;
+    border-radius:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:0.5rem 0.75rem;
+    height:111px;
+
+}
+.nav-option{
+    line-height:2.5rem;
+    opacity:0.7;
+    padding-left:0.5rem;
+}
+.nav-option i{
+    font-size:1.25rem;
+
+}
+.nav-option a{
+    font-size:1rem;
+    margin-left:1rem;
+}
+.nav-option:hover{
+    line-height:2.5rem;
+    opacity:1;
+}
+.library{
+    background-color:#121212;
+    border-radius:1rem;
+    height:100%;
+    margin-top:0.5rem;
+    padding:0.5rem 0.75rem;
+}
+.option{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.library-option img{
+    height:1.25rem;
+    width:1.25rem;
+}
+.icons{
+    font-size:1.25rem;
+    opacity:0.7;
+    margin-right:1rem;
+    display:flex;
+}
+.icons i:hover{
+    opacity:1;
+}
+.icons i{
+    opacity:0.7;
+    margin-right:1rem;
+
+}
+.box{
+    background-color:#232323;
+    height:8rem;
+    border-radius:0.75rem;
+    margin:0.5rem 0rem 1.75rem 0rem;
+    padding:0.75rem 1rem;
+}
+.box-p1{
+    font-size:1rem;
+    font-weight:500px;
+
+}
+.box-p2{
+    font-size:0.75rem;
+    opacity:0.90;
+}
+.badge{
+    border:none;
+    border-radius:100px;
+    padding:0.25rem 1rem;
+    background-color:white;
+    font-weight:650;
+    height:2rem;
+    width:fit-content;
+}
+.badge-black{
+    background-color:black;
+    color:white;
+}
+.sticky-nav{
+    position:sticky;
+    top:0;
+    background-color:#121212;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 0rem 1rem 0rem;
+    z-index:10;
+}
+.sticky-nav-icons img{
+    height:1rem;
+    width:1rem;
+    margin-left:0.5rem;
+}
+.sticky-nav-options{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.nav-items{
+    margin-right:1rem;
+}
+@media(max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
+.card{
+    background-color:#232323;
+    width:150px;
+    border-radius:0.5rem;
+    padding:1rem;
+    margin-left:1.35rem;
+    margin-top:1rem;
+}
+
+
+.card-img{
+    width:100%;
+    border-radius:0.5rem;
+    transition:0.5s;
+}
+.card-img:hover{
+    width:105%;
+    box-shadow:1px 1px 2px white;
+}
+.card-title{
+    font-weight:600;
+}
+.card-info{
+    font-size:0.85rem;
+    opacity:0.7;
+}
+.cards-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.footer{
+    height:300px;
+
+}
+.line{
+    width:90%;
+    height:50%;
+    border-top:1px solid white;
+    opacity:0.8;
+    justify-content:center;
+}
+.Music-player{
+    display: flex;
+    padding-top:1.25rem;
+    justify-content:space-between;
+    align-items:center;
+}
+.album{
+    width:25%;
+}
+.players {
+    width:50%;
+
+
+    
+}
+.controls{
+    width:25%;
+}
+.players-control img {
+    width:1.rem;
+    height:1rem;
+    margin-left:1rem;
+}
+.player-control-icon{
+    width:1rem;
+    height:1rem;
+    opacity:0.7;
+    
+
+
+}
+.player-control-icon:hover{
+    opacity:1;
+
+}
+
+
+.playback-bar{
+    justify-content:center;
+    align-items:center;
+    
+    
+}
+.album img{
+    width:3rem;
+    height:3rem;
+    margin-left:1rem;
+    margin-top:1rem;
+    opacity:0.7;
+}
+.album img:hover{
+    opacity:1;
+    width:4rem;
+    height:4rem;
+    transition:1s;
+}
